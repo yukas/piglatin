@@ -2,6 +2,9 @@ require "rubygems"
 require "minitest/autorun"
 
 class PiglatinTranslatorTest < MiniTest::Test
+  make_my_diffs_pretty!
+  parallelize_me!
+  
   def test_pig_becomes_igpay
     assert_equal "igpay", translate("pig")
   end
